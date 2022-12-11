@@ -59,7 +59,6 @@ class Signup : AppCompatActivity() {
         mDbRef = FirebaseDatabase.getInstance().getReference()
         mDbRef.child("user").child(uid).setValue(User(name, email, uid))
 
-
     }
 }
 //".read": "now < 1662575400000",  // 2022-9-8
